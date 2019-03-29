@@ -1,0 +1,705 @@
+$CustomColorBlue: #16cae6;
+$CustomColorBlack: #080808;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat;
+    transition: 0.2s;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+// nav
+// nav
+// nav
+nav {
+    height: 8vh;
+    width: 100%;
+    padding: 0 95px;
+    background-color: rgba($CustomColorBlack, $alpha: 0.6);
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+        margin-left: 2%;
+        height: 90%;
+        width: auto;
+    }
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    
+    li {
+        color: white;
+        height: 25px;
+        margin: 0 30px;
+        font-size: 18px;
+    }
+
+    li:hover {
+        color: $CustomColorBlue;
+        cursor: pointer;
+    }
+}
+
+// header
+// header
+// header
+header {
+    height: 99vh;
+
+    background-image: url(IMG/HeaderBG.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+}
+
+#TextHeader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 200px;
+    width: 700px;
+    margin-left: -350px;
+    margin-top: -100px;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+
+
+    h1 {
+        border-bottom: 1px solid white;
+        padding: 10px;
+
+        span {
+            color: $CustomColorBlue;
+
+        }
+    }
+
+    p {
+        margin-top: 15px;
+    }
+}
+
+// main
+// main
+// main
+
+main {
+
+    position: relative;
+    overflow: hidden;
+    padding: 0 182px;
+
+}
+
+#BackGroundMain {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+
+}
+
+#HeaderOfert {
+    height: 195px;
+    border-bottom: 1px solid grey;
+    font-size: 48px;
+    color: #242424;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#OfertsBox {
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 152px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.Ofert {
+    height: 100%;
+    width: 25%;
+    font-size: 24px;
+    margin-left: 47px;
+
+    img {
+        height: 80px;
+        width: 77px;
+        margin-bottom: 52px;
+    }
+
+    h3 {
+
+        color: #242424;
+    }
+
+    p {
+        font-size: 17px;
+        line-height: 24px;
+        color: #555555;
+        margin-top: 26px;
+
+    }
+}
+
+// MediumLeyers
+// MediumLeyers
+// MediumLeyers
+
+
+
+
+.BigOfert {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 400px;
+
+    h1 {
+        margin-top: 30px;
+        font-size: 36px;
+    }
+
+    p {
+        color: #878787;
+        line-height: 30px;
+        font-size: 16px;
+
+    }
+
+}
+
+#TextBox {
+    width: 510px;
+    height: 281px;
+
+    p {
+        margin-top: 50px;
+        font-size: 17px;
+        line-height: 24px;
+        color: #878787;
+    }
+}
+
+.BigOfert:last-child {
+
+    margin-bottom: 142px;
+
+    #TextBox {
+        h1 {
+            color: white;
+        }
+
+        p {
+            color: white;
+
+        }
+    }
+}
+
+#Tablet {
+    width: 665px;
+    height: 439px;
+}
+
+#Laptop {
+    margin-right: -85px;
+    width: 60%;
+    height: auto;
+}
+
+
+
+// Pofolio
+// Pofolio
+// Pofolio
+
+#MyPorfolio {
+    height: 800px;
+    overflow: hidden;
+
+}
+
+#TextBoxPoroflio {
+    width: 50%;
+    height: 555px;
+    padding: 50px;
+    float: left;
+
+    h1 {
+        font-size: 72px;
+
+    }
+
+    p {
+        color: #878787;
+        margin-top: 50px;
+
+        line-height: 30px;
+    }
+}
+
+.PoroflioItem {
+
+    height: 250px;
+    width: 25%;
+    float: left;
+    overflow: hidden;
+
+    img {
+        height: 100%;
+        width: 100%;
+        transform: scale(1.01)
+    }
+
+    img:hover {
+        transform: scale(1.1);
+        transition: 2s;
+    }
+}
+
+
+#PrimaryPorfolio {
+    overflow: hidden;
+    height: 555px;
+    width: 50%;
+    float: left;
+
+    img {
+        height: 300%;
+        width: 100%;
+        transform: scale(1.01);
+        margin-top: -15px;
+
+    }
+
+    img:hover {
+        transform: scale(1.03);
+        transition: 2s;
+        cursor: pointer;
+    }
+}
+
+// whoiam
+// whoiam
+// whoiam
+
+#WhoIam {
+    height: 35vh;
+    width: 100%;
+    font-size: 34px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+
+}
+
+#BtnShow {
+    height: 70px;
+    width: 230px;
+    background-color: $CustomColorBlue;
+    margin-top: 25px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+}
+
+#BtnShow:hover {
+    background-color: white;
+    color: $CustomColorBlue;
+    border: 5px solid $CustomColorBlue;
+}
+
+// Kontakt
+// Kontakt
+// Kontakt
+
+#Contact {
+    position: relative;
+    height: 720px;
+    width: 100%;
+    background-image: url(IMG/ContactBG.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 10%;
+
+
+}
+
+#ContactText {
+    height: 377px;
+    width: 50%;
+    z-index: 1;
+
+    h1 {
+        font-size: 65px;
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 48px;
+        color: #2ebaee;
+    }
+
+    span {
+        color: #878787;
+    }
+}
+
+// email
+// email
+// email
+
+form {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+
+}
+
+#Email {
+    width: 636px;
+    height: 61px;
+    border-radius: 3px;
+    border: 1px solid #535353;
+    background-color: transparent;
+    z-index: 1;
+    padding: 22px;
+    color: white;
+    margin-bottom: 20px;
+
+}
+
+#Nick {
+    width: 636px;
+    height: 61px;
+    border-radius: 3px;
+    border: 1px solid #535353;
+    background-color: transparent;
+    padding: 22px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 636px;
+    height: 204px;
+    border-radius: 3px;
+    border: 1px solid #535353;
+    background-color: transparent;
+    padding: 22px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#Send {
+    width: 151px;
+    height: 44px;
+    background-color: $CustomColorBlue;
+    border-radius: 30px;
+    border: 2px solid $CustomColorBlue;
+    color: white;
+}
+
+
+// Social
+// Social
+// Social
+
+#SocialBox {
+    height: 58px;
+    width: 60%;
+    margin-top: 73px;
+
+
+
+    img {
+        height: 58px;
+        width: auto;
+    }
+
+}
+
+
+
+// footer
+// footer
+// footer
+
+footer {
+    height: 120px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 170px 0 130px;
+    color: #b2b2b2;
+
+
+}
+
+
+// class
+// class
+// class
+
+
+
+.HoverEffect {
+    opacity: 1;
+}
+
+.HoverEffect:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+
+// RWD
+// RWD
+// RWD
+
+@media(max-width: 1000px) {
+    nav {
+        padding: 0px;
+    }
+
+    main {
+
+        margin: 0 auto;
+        padding: 0;
+
+    }
+
+    .BigOfert {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .BigOfert:first-child {
+
+        flex-direction: column-reverse;
+    }
+
+    #Laptop {
+        width: 90%;
+        height: auto;
+        margin-right: 0px;
+
+    }
+
+    #Tablet {
+        width: 60%;
+        height: auto;
+
+    }
+
+    #HeaderOfert {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #PrimaryPorfolio {
+        height: 250px;
+        width: 100%;
+
+        img {
+            height: 500%;
+            width: 100%;
+            margin-top: -120px;
+        }
+
+        img:hover {
+            transform: scale(1.03);
+
+        }
+    }
+
+    #MyPorfolio {
+        display: flex;
+        flex-direction: column;
+
+        height: 100%;
+
+
+    }
+
+    #TextBoxPoroflio {
+        text-align: center;
+        width: 100%;
+    }
+
+    #Description {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+
+    .PoroflioItem {
+        width: 50%;
+
+    }
+
+
+    #Btn {
+
+        margin: 0 auto;
+    }
+
+    #Contact {
+        flex-direction: column;
+        height: 1200px;
+    }
+
+    #ContactText {
+        margin-top: 100px;
+    }
+
+    form {
+        margin-top: 150px;
+    }
+
+    footer {
+        padding: 0px;
+    }
+
+}
+
+@media(max-width: 700px) {
+    nav {
+        ul {
+            display: none;
+        }
+    }
+
+    #TextHeader {
+
+
+        height: 200px;
+        width: 350px;
+        margin-left: -175px;
+        margin-top: -100px;
+
+        font-size: 1.2rem;
+
+    }
+
+    #OfertsBox {
+        flex-direction: column;
+        align-items: center;
+        height: 1000px;
+
+    }
+
+    .Ofert {
+        text-align: center;
+        width: 90%;
+    }
+
+    main {
+        height: 100%;
+    }
+
+
+    #Btn {
+        margin-top: 100px;
+    }
+
+
+    .BigOfert {
+
+
+        h1 {
+            font-size: 1.8rem;
+        }
+
+        p {
+            margin: 0 auto;
+            width: 80%;
+            height: 300px;
+
+        }
+
+    }
+
+    #Contact {
+        padding: 0px;
+
+    }
+
+    #ContactText {
+        margin-left: -20vh;
+    }
+
+    form {
+
+        width: 90%;
+    }
+
+    #Email {
+        width: 90%;
+
+    }
+
+    #Nick {
+        width: 90%;
+    }
+
+    textarea {
+        width: 90%;
+    }
+
+    #WhoIam {
+        height: 50vh;
+    }
+
+    #SocialBox {
+        margin-top: 20px;
+    }
+
+    footer {
+        ul {
+            display: none;
+        }
+    }
+
+}

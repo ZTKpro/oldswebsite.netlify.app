@@ -1,186 +1,215 @@
 <!DOCTYPE html>
 <html lang="pl">
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>ZiutekFrontEnd</title>
-        <link rel="stylesheet" href="Styless.min.css">
-        <link rel="shortcut icon" href="IMG/Minilogo.png">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-    </head>
-    
-    <body>
-        <nav>
-            <img src="IMG/LOGONeonPoP.png" alt="">
-            <ul>
-                <li id="ScrollUs"> <b> Usługi </b> </li>
-                <li id="ScrollPo"> <b> Porfolio </b></li>
-                <li id="ScrollCo"> <b> Kontakt </b></li>
-            </ul>
-        </nav>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ZiutekFrontEnd</title>
+    <link rel="stylesheet" href="Styless.min.css">
+    <link rel="shortcut icon" href="IMG/MiniLogo.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <meta name="description"
+        content="Witam! Nazywam sie Damian Szmurło. Zajmuję się Frontendem. Zapraszam do kontaktu.">
+</head>
+
+<body>
+
+    <nav class="page-nav">
+        <img src="IMG/logo.png" alt="ziutekfrontend.pl">
+        <div id="hamburger" class="hamburger">
+            <div id="hamb-el1" class="hamb-el1"></div>
+            <div class="hamb-el2"></div>
+            <div id="hamb-el3" class="hamb-el3"></div>
+        </div>
+        <ul  id="nav-collapse" class="nav-collapse">
+            <li>
+                <a class="nav-item" href="#offer">
+                    Usługi
+                </a>
+            </li>
+            <li>
+                <a class="nav-item" href="#porfolio">
+                    Porfolio
+                </a>
+            </li>
+            <li>
+                <a class="nav-item" href="#contact">
+                    Kontakt
+                </a>
+            </li>
+        </ul>
+    </nav>
         
-        
-        <header>
-            <section id="TextHeader">
-                <h1><span> Front </span>End Developer</h1>
-                <p>Damian Szmurło</p>
-            </section>
-            
-        </header>
-        
-        
-        <main>
-            <img id="BackGroundMain" src="IMG/BG.png" alt="">
-            <section id="HeaderOfert">
+
+    <header class="page-header">
+        <div class="textheader">
+            <h1><span>Front </span>End Developer</h1>
+            <p>Damian Szmurło</p>
+        </div>
+
+    </header>
+
+
+    <main>
+        <section class="page-ofert">
+            <div id="offer" class="header-offert">
                 <p>Moje Usługi</p>
-            </section>
-            <section id="OfertsBox">
-                <section class="Ofert">
-                    <img src="IMG/ResponsiveDesignIcon.png" alt="">
+            </div>
+            <div class="ofertsbox">
+                <div class="ofert">
+                    <img src="IMG/responsiveIcon.png" alt="resposive icon">
                     <h3>Responsive design</h3>
                     <p>Dostosowanie strony internetowej do wybranych przeglądarek i urządzeń mobilnych z uwzględnieniem
                         różnych
-                        rozdzielczości </p>
-                    </section>
-                    <section class="Ofert">
-                        
-                        <img src="IMG/Cog.png" alt="">
-                        
-                        <h3>Administracja strony</h3>
-                        <p>Wdrożenie i utrzymanie strony internetowej.</p>
-                    </section>
-                    
-                    <section class="Ofert">
-                        <img src="IMG/CodeSignsNeon.png" alt="">
-                        <h3>Kodowanie PSD to HTML</h3>
-                        <p>Pocięcie i zakodowanie do HTML5,CSS3 i JavaScript dostarczonego projektu graficznego strony
-                            internetowej, mailingu,
-                            szablonu.</p>
-                        </section>
-                        
-                    </section>
-                    
-                    
-                    
-                    <section>
-                        
-                        <section class="BigOfert">
-                            <section id="TextBox">
-                                <h1>
-                                    Kodowanie na najwyższym poziomie
-                                </h1>
-                                <b>
-                                    <p>Dzięki znajomość dobrych praktyk programowania oraz takich technologi jak SASS itp. Mój kod ładuje się niezwykle szybko.
-                                    </p>
-                                </b>
-                            </section>
-                            <img id="Laptop" src="IMG/Laptop.png" alt="">
-                        </section>
-                        
-                        <section class="BigOfert">
-                            <img id="Tablet" src="IMG/tablet.png" alt="">
-                            <section id="TextBox">
-                                <h1>Z najnowszych standartami</h1>
-                                <b>
-                                    <p>
-                                        Znajomość najnowszych trendów zwiazanych że front endem sprawia że jestem bardzo efektywnym programistą. 
-                                    </p>
-                                </b>
-                            </section>
-                        </section>
-                    </section>
-                </main>
-                
-                <section id="MyPorfolio">
-                    
-                    <section id="Description">
-                        <section id="PrimaryPorfolio"> <img src="IMG/PrimaryPorfolio.png" alt=""></section>
-                        <section id="TextBoxPoroflio">
-                            <h1>Moje Porfolio</h1>
-                            <p>
-                                Znajdzisz tu moje wszystkie projekty. 
-                                <br> Dzięki czemu możesz przejrzeć mój kod oraz przekonać się że kod jest pisany z
-                                niezwyklą starannością. </p>
-                                
-                            </section>
-                        </section>
-                        <section id="PorofolioBox">
-                            <a href="">
-                                <section class="PoroflioItem  HoverEffect"> <img src="IMG/Photographer.png" alt=""></section>
-                            </a>
-                            <a href="">
-                                <section class="PoroflioItem HoverEffect"> <img src="IMG/ZonaStudioCode.png" alt=""> </section>
-                            </a>
-                            <a href="">
-                                <section class="PoroflioItem HoverEffect"> <img src="IMG/SnakePorfolio.PNG" alt=""> </section>
-                            </a>
-                            <a href="">
-                                <section class="PoroflioItem HoverEffect"> <img src="IMG/ComingSoon.jpg" alt=""> </section>
-                            </a>
-                        </section>
-                        
-                    </section>
-                    <section id="WhoIam">
-                        <h1>Chcesz mnie poznać??</h1>
-                        <a href="https://www.linkedin.com/in/damian-szmur%C5%82o-1585a8179/">
-                            <div class="HoverEffect" id="BtnShow"> Wejdz</div>
+                        rozdzielczości. </p>
+                </div>
+                <div class="ofert">
+                    <img src="IMG/cogIcon.png" alt="cog icon">
+                    <h3>Administracja strony</h3>
+                    <p>Wdrożenie i utrzymanie strony internetowej.</p>
+                </div>
+
+                <div class="ofert">
+                    <img src="IMG/codesignIcon.png" alt="codesign icon">
+                    <h3>Kodowanie PSD to HTML</h3>
+                    <p>Pocięcie i zakodowanie do HTML5,CSS3 i JavaScript dostarczonego projektu graficznego strony
+                        internetowej, mailingu,
+                        szablonu.</p>
+                </div>
+            </div>
+
+
+
+            <section>
+                <div class="bigofert">
+                    <div class="textbox">
+                        <h2>
+                            Kodowanie na najwyższym poziomie
+                        </h2>
+                        <p>Strony przeze mnie tworzone wyróżniają się wysoką jakością. Doskonale działają na wszystkich urządzeniach. Dbam o każdy
+                        szczegół i kończę projekty na czas.
+                        </p>
+                    </div>
+                    <img class="laptop" src="IMG/laptop.png" alt="laptop">
+                </div>
+                <div class="bigofert">
+                    <img class="tablet" src="IMG/tablet.png" alt="tablet">
+                    <div class="textbox">
+                        <h2>Z najnowszymi standardami</h2>
+                        <p>
+                            Znajomość najnowszych trendów związanych z front endem sprawia że jestem bardzo
+                            efektywnym
+                            programistą.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <img class="backgroundmain" src="IMG/background.png" alt="blue background ">
+        </section>
+        <section id="porfolio" class="porfoliobox">
+            <div class="description">
+                <div class="primaryphoto">
+                    <a href="http://ziutekfrontend.pl/gitar">
+                        <img src="IMG/primaryporfolio-porfolioitem.png" alt="http://ziutekfrontend.pl/gitar">
+                    </a>
+                </div>
+                <div class="textboxporoflio">
+                    <h2>Moje Porfolio</h2>
+                    <p>
+                        Znajdzisz tu moje wszystkie projekty.
+                        <br> Dzięki czemu możesz przejrzeć mój kod oraz przekonać się że kod jest pisany z
+                        niezwyklą starannością. </p>
+                </div>
+            </div>
+            <div class="itemphoto">
+                <div class="poroflioitem">
+                    <a href="http://ziutekfrontend.pl/photographer">
+                        <img src="IMG/photographer-porfolioitem.png" alt="http://ziutekfrontend.pl/photographer">
+                    </a>
+                </div>
+                <div class="poroflioitem">
+                    <a href="http://ziutekfrontend.pl/zonastudio">
+                        <img src="IMG/studiocode-porfolioitem.png" alt="http://ziutekfrontend.pl/zonastudio">
+                    </a>
+                </div>
+                <div class="poroflioitem">
+                    <a href="http://ziutekfrontend.pl/gameroom">
+                        <img src="IMG/snake-porfolioitem.PNG" alt="http://ziutekfrontend.pl/gameroom">
+                    </a>
+                </div>
+                <div class="poroflioitem"> <img src="IMG/comingsoon-porfolioitem.jpg" alt="comingsoon"> </div>
+            </div>
+        </section>
+        <section class="whoiam">
+            <h2>Chcesz mnie poznać??</h2>
+            <div class="btnshow">
+                <a href="https://www.linkedin.com/in/damian-szmur%C5%82o-1585a8179/">
+                    Wejdz
+                </a>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <div class="contacttext">
+                <h2>Kontakt</h2>
+                <p> <span>Phone: </span> (+48) 665 843 214 <br>
+                    <span> E-mail: </span> kontakt@ziutekfrontend.pl
+                </p>
+                <ul class="socialbox">
+                    <li class="fb">
+                        <a href="https://www.facebook.com/Ziutek-Front-End-384060302425139">
+                            <img src="IMG/FacebookIcon.png" alt="facebook">
                         </a>
-                    </section>
-                    
-                    <section id="Contact">
-                        
-                        <section id="ContactText">
-                            <h1>Kontakt</h1>
-                            <p> <span>Phone: </span> (+48) 665 843 214 <br>
-                                <span> E-mail: </span> ziutekfrontend@gmail.com
-                            </p>
-                            
-                            <ul id="SocialBox">
-                                
-                                <a href="https://www.facebook.com/Ziutek-Front-End-384060302425139">
-                                    <li class="HoverEffect" id="FB">
-                                        <img src="IMG/FacebookIcon.png" alt="">
-                                    </li>
-                                </a>
-                                
-                                <a href="https://www.linkedin.com/in/damian-szmur%C5%82o-1585a8179/">
-                                    <li class="HoverEffect" id="Linkedin">
-                                        <img src="IMG/LinkedInIcon.png" alt="">
-                                    </li>
-                                </a>
-                                <a href="https://github.com/ZiutekFronEnd">
-                                    <li class="HoverEffect" id="Git">
-                                        <img src="IMG/GitIcon.png" alt="">
-                                    </li>
-                                </a>
-                                
-                            </ul>
-                        </section>
-                        <form action="">
-                            <input placeholder="Email" id="Email" type="email">
-                            <input placeholder="Imię" id="Nick" type="name">
-                            <textarea name="" id="" cols="30" rows="10"></textarea>
-                            <input class="HoverEffect" id="Send" type="button" value="Wyslij">
-                        </form>
-                        
-                        
-                    </section>
-                    
-                    
-                </section>
-                <footer>
-                    <ul>
-                          <li> <b> Usługi </b> </li>
-                          <li> <b> Porfolio </b></li>
-                          <li> <b> Kontakt </b></li>
-                    </ul>
-                    <p>Copyright ⓒ 2019. All rights reserved by Damian Szmurło</p>
-                </footer>
-                
-                
-                <script src="MyWebisteJS.js"></script>
-            </body>
-            
-            </html>
+                    </li>
+
+                    <li class="linkedin">
+                        <a href="https://www.linkedin.com/in/damian-szmur%C5%82o-1585a8179/">
+                            <img src="IMG/LinkedInIcon.png" alt="linkedin">
+                        </a>
+                    </li>
+                    <li class="git">
+                        <a href="https://github.com/ZiutekFronEnd">
+                            <img src="IMG/GitIcon.png" alt="github">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <form class="form" id="contactForm" method="post" action="/send-scripts.php">
+                <div class="form-row">
+                    <label for="field-name"></label>
+                    <input placeholder="imię" type="text" class="nick" name="name" required id="field-name"
+                        data-error="Wypełnij to pole" pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
+                </div>
+                <div class="form-row">
+                    <label for="field-email"></label>
+                    <input placeholder="email" type="email" name="email" class="email" required id="field-email"
+                        data-error="Wpisz poprawny email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+                </div>
+                <div class="form-row">
+                    <label for="field-message"></label>
+                    <textarea name="message" required data-error="Musisz wypełnić pole" id="field-message"></textarea>
+                </div>
+                <div class="form-row confirm">
+                    <label class="checkbox-cnt">
+                        <input type="checkbox" data-error="Musisz wypełnić pole" name="regulation">
+                        <i class="state" aria-hidden="true"></i>
+                        <span>Potwierdz wiadomość</span>
+                    </label>
+                </div>
+                <div class="form-row">
+                    <button type="submit" class="send submit-btn">
+                        Wyślij
+                    </button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+    <footer class="footer-page">
+        <p>Copyright ⓒ 2019. All rights reserved by Damian Szmurło</p>
+    </footer>
+    <script src="MyWebsiteJS.js"></script>
+</body>
+
+</html>

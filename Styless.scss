@@ -61,7 +61,7 @@ $CustomColorBlack: #080808;
 }
 
 
-.hamburger {
+.nav-hamburger {
     width: 40px;
     height: 30px;
     position: relative;
@@ -71,7 +71,7 @@ $CustomColorBlack: #080808;
 }
 
 
-.hamburger:hover {
+.nav-hamburger:hover {
 
     .hamb-el1,
     .hamb-el2,
@@ -135,7 +135,7 @@ $CustomColorBlack: #080808;
     position: relative;
 }
 
-.textheader {
+.header-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -186,7 +186,7 @@ $CustomColorBlack: #080808;
     z-index: -1;
 }
 
-.header-offert {
+.ofert-header {
     height: 195px;
     border-bottom: 1px solid grey;
     font-size: 48px;
@@ -196,7 +196,7 @@ $CustomColorBlack: #080808;
     align-items: center;
 }
 
-.ofertsbox {
+.oferts-box {
     height: 400px;
     display: flex;
     margin-top: 152px;
@@ -265,7 +265,7 @@ $CustomColorBlack: #080808;
 
 }
 
-.textbox {
+.bigofert-text {
     width: 510px;
     height: 281px;
 
@@ -280,7 +280,7 @@ $CustomColorBlack: #080808;
 .bigofert:last-child {
     text-align: left;
 
-    .textbox {
+    .bigofert-text {
         h2 {
             color: white;
         }
@@ -308,7 +308,7 @@ $CustomColorBlack: #080808;
 // Pofolio
 // Pofolio
 
-.porfoliobox {
+.porfolio{
     height: 100%;
     overflow: hidden;
     width: 100%;
@@ -338,7 +338,7 @@ $CustomColorBlack: #080808;
     }
 }
 
-.textboxporoflio {
+.porfolio-text {
     width: 50%;
     height: 100%;
     padding: 50px;
@@ -360,14 +360,14 @@ $CustomColorBlack: #080808;
 
 
 
-.itemphoto {
+.porfolio-items {
     height: 30%;
     width: 100%;
     display: flex;
 
 }
 
-.poroflioitem {
+.poroflio-item {
 
     height: 250px;
     width: 100%;
@@ -407,7 +407,7 @@ $CustomColorBlack: #080808;
     flex-direction: column;
 }
 
-.btnshow {
+.whoiam-btn {
     height: 70px;
     width: 230px;
     background-color: $CustomColorBlue;
@@ -425,7 +425,7 @@ $CustomColorBlack: #080808;
     }
 }
 
-.btnshow:hover {
+.whoiam-btn:hover {
     background-color: white;
     border: 5px solid $CustomColorBlue;
 
@@ -456,7 +456,7 @@ $CustomColorBlack: #080808;
 
 }
 
-.contacttext {
+.contact-text {
 
     height: 377px;
     width: 50%;
@@ -558,8 +558,7 @@ textarea {
 // Social
 // Social
 // Social
-
-.socialbox {
+.contact-social {
     height: 58px;
     width: 60%;
     margin-top: 73px;
@@ -625,7 +624,7 @@ textarea {
     }
 
 
-    .ofertsbox{
+    .oferts-box{
         
         padding: 0 30px;
         width: 95%;
@@ -662,18 +661,18 @@ textarea {
 
     }
 
-    .header-offert {
+    .ofert-header {
         width: 90%;
         margin: 0 auto;
     }
 
-    .socialbox {
+    .contact-social {
         width: 100%
     }
 
 
 
-    .textboxporoflio {
+    .porfolio-text {
         text-align: center;
         width: 100%;
     }
@@ -689,13 +688,13 @@ textarea {
 
     }
 
-    .itemphoto {
+    .porfolio-items {
         height: 500px;
         display: block;
         background-color: red;
     }
 
-    .poroflioitem {
+    .poroflio-item {
         width: 50%;
         float: left;
 
@@ -716,7 +715,7 @@ textarea {
         height: 1200px;
     }
 
-    .contacttext {
+    .contact-text {
         margin-top: 100px;
         width: 100%;
     }
@@ -750,12 +749,12 @@ textarea {
     }
 
 
-    .hamburger,
+    .nav-hamburger,
     .menubtn {
         display: block;
     }
 
-    .textheader {
+    .header-text {
 
 
         height: 200px;
@@ -766,7 +765,7 @@ textarea {
 
     }
 
-    .ofertsbox {
+    .oferts-box {
         flex-direction: column;
         align-items: center;
         height: 1000px;
@@ -788,7 +787,7 @@ textarea {
             font-size: 1.2rem;
         }
 
-        .textbox {
+        .bigofert-text {
             width: 90%;
 
             p {
@@ -797,7 +796,7 @@ textarea {
         }
     }
 
-    .textboxporoflio{
+    .porfolio-text {
         h2{
             font-size: 16vw;
         }
@@ -808,7 +807,7 @@ textarea {
         }
     }
 
-    .socialbox {
+    .contact-social {
         height: 58px;
         width: 60%;
         margin-top: 73px;
@@ -827,7 +826,7 @@ textarea {
 
 
 
-        .contacttext {
+        .contact-text {
             width: 70%;
             h2{
                 font-size: 16vw;
@@ -859,7 +858,7 @@ textarea {
             height: 50vh;
         }
 
-        .socialbox {
+        .contact-social {
             margin-top: 20px;
             width: 70%;
         }

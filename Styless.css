@@ -52,7 +52,7 @@
   flex-direction: row;
 }
 
-.hamburger {
+.nav-hamburger {
   width: 40px;
   height: 30px;
   position: relative;
@@ -61,9 +61,9 @@
   display: none;
 }
 
-.hamburger:hover .hamb-el1,
-.hamburger:hover .hamb-el2,
-.hamburger:hover .hamb-el3 {
+.nav-hamburger:hover .hamb-el1,
+.nav-hamburger:hover .hamb-el2,
+.nav-hamburger:hover .hamb-el3 {
   border-top: 5px solid #16cae6;
   transition: 0.4s;
 }
@@ -115,7 +115,7 @@
   position: relative;
 }
 
-.textheader {
+.header-text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -129,16 +129,16 @@
   text-align: center;
 }
 
-.textheader h1 {
+.header-text h1 {
   border-bottom: 1px solid white;
   padding: 10px;
 }
 
-.textheader h1 span {
+.header-text h1 span {
   color: #16cae6;
 }
 
-.textheader p {
+.header-text p {
   font-size: 1.4rem;
   margin-top: 5px;
   font-weight: 600;
@@ -159,7 +159,7 @@
   z-index: -1;
 }
 
-.header-offert {
+.ofert-header {
   height: 195px;
   border-bottom: 1px solid grey;
   font-size: 48px;
@@ -169,7 +169,7 @@
   align-items: center;
 }
 
-.ofertsbox {
+.oferts-box {
   height: 400px;
   display: flex;
   margin-top: 152px;
@@ -224,12 +224,12 @@
   font-weight: 600;
 }
 
-.textbox {
+.bigofert-text {
   width: 510px;
   height: 281px;
 }
 
-.textbox p {
+.bigofert-text p {
   margin-top: 50px;
   font-size: 17px;
   line-height: 24px;
@@ -240,11 +240,11 @@
   text-align: left;
 }
 
-.bigofert:last-child .textbox h2 {
+.bigofert:last-child .bigofert-text h2 {
   color: white;
 }
 
-.bigofert:last-child .textbox p {
+.bigofert:last-child .bigofert-text p {
   color: white;
 }
 
@@ -258,7 +258,7 @@
   height: 439px;
 }
 
-.porfoliobox {
+.porfolio {
   height: 100%;
   overflow: hidden;
   width: 100%;
@@ -287,42 +287,42 @@
   transition: 1s;
 }
 
-.textboxporoflio {
+.porfolio-text {
   width: 50%;
   height: 100%;
   padding: 50px;
 }
 
-.textboxporoflio h2 {
+.porfolio-text h2 {
   font-size: 72px;
 }
 
-.textboxporoflio p {
+.porfolio-text p {
   color: #484848;
   margin-top: 50px;
   line-height: 30px;
 }
 
-.itemphoto {
+.porfolio-items {
   height: 30%;
   width: 100%;
   display: flex;
 }
 
-.poroflioitem {
+.poroflio-item {
   height: 250px;
   width: 100%;
   overflow: hidden;
   z-index: 3;
 }
 
-.poroflioitem img {
+.poroflio-item img {
   height: 100%;
   width: 100%;
   transform: scale(1.01);
 }
 
-.poroflioitem img:hover {
+.poroflio-item img:hover {
   transform: scale(1.1);
   transition: 2s;
 }
@@ -339,7 +339,7 @@
   flex-direction: column;
 }
 
-.btnshow {
+.whoiam-btn {
   height: 70px;
   width: 230px;
   background-color: #16cae6;
@@ -352,16 +352,16 @@
   cursor: pointer;
 }
 
-.btnshow a {
+.whoiam-btn a {
   color: white;
 }
 
-.btnshow:hover {
+.whoiam-btn:hover {
   background-color: white;
   border: 5px solid #16cae6;
 }
 
-.btnshow:hover a {
+.whoiam-btn:hover a {
   color: #16cae6;
 }
 
@@ -381,26 +381,26 @@
   padding: 100px 182px;
 }
 
-.contacttext {
+.contact-text {
   height: 377px;
   width: 50%;
   z-index: 1;
 }
 
-.contacttext h2 {
+.contact-text h2 {
   font-size: 65px;
   color: white;
   margin-bottom: 20px;
 }
 
-.contacttext p {
+.contact-text p {
   font-size: 30px;
   font-weight: 400;
   line-height: 48px;
   color: #2ebaee;
 }
 
-.contacttext span {
+.contact-text span {
   color: #878787;
 }
 
@@ -470,7 +470,7 @@ textarea {
   cursor: pointer;
 }
 
-.socialbox {
+.contact-social {
   height: 58px;
   width: 60%;
   margin-top: 73px;
@@ -479,7 +479,7 @@ textarea {
   justify-content: space-between;
 }
 
-.socialbox img {
+.contact-social img {
   height: 58px;
   width: auto;
 }
@@ -509,7 +509,7 @@ textarea {
   .page-ofert {
     padding: 2%;
   }
-  .ofertsbox {
+  .oferts-box {
     padding: 0 30px;
     width: 95%;
     margin: 100px auto;
@@ -536,14 +536,14 @@ textarea {
     width: 90%;
     height: auto;
   }
-  .header-offert {
+  .ofert-header {
     width: 90%;
     margin: 0 auto;
   }
-  .socialbox {
+  .contact-social {
     width: 100%;
   }
-  .textboxporoflio {
+  .porfolio-text {
     text-align: center;
     width: 100%;
   }
@@ -555,12 +555,12 @@ textarea {
     height: 25vh;
     width: 100%;
   }
-  .itemphoto {
+  .porfolio-items {
     height: 500px;
     display: block;
     background-color: red;
   }
-  .poroflioitem {
+  .poroflio-item {
     width: 50%;
     float: left;
   }
@@ -575,7 +575,7 @@ textarea {
     flex-direction: column;
     height: 1200px;
   }
-  .contacttext {
+  .contact-text {
     margin-top: 100px;
     width: 100%;
   }
@@ -602,18 +602,18 @@ textarea {
     justify-content: space-around;
     flex-direction: column;
   }
-  .hamburger,
+  .nav-hamburger,
   .menubtn {
     display: block;
   }
-  .textheader {
+  .header-text {
     height: 200px;
     width: 90%;
     margin-left: -45%;
     margin-top: -100px;
     font-size: 0.9rem;
   }
-  .ofertsbox {
+  .oferts-box {
     flex-direction: column;
     align-items: center;
     height: 1000px;
@@ -629,37 +629,37 @@ textarea {
   .bigofert h2 {
     font-size: 1.2rem;
   }
-  .bigofert .textbox {
+  .bigofert .bigofert-text {
     width: 90%;
   }
-  .bigofert .textbox p {
+  .bigofert .bigofert-text p {
     font-size: 14px;
   }
-  .textboxporoflio h2 {
+  .porfolio-text h2 {
     font-size: 16vw;
   }
   .whoiam h2 {
     font-size: 28px;
   }
-  .socialbox {
+  .contact-social {
     height: 58px;
     width: 60%;
     margin-top: 73px;
   }
-  .socialbox img {
+  .contact-social img {
     height: 40px;
     width: auto;
   }
   .contact {
     padding: 0px;
   }
-  .contact .contacttext {
+  .contact .contact-text {
     width: 70%;
   }
-  .contact .contacttext h2 {
+  .contact .contact-text h2 {
     font-size: 16vw;
   }
-  .contact .contacttext p {
+  .contact .contact-text p {
     font-size: 6vw;
   }
   .contact form {
@@ -677,7 +677,7 @@ textarea {
   .contact .whoiam {
     height: 50vh;
   }
-  .contact .socialbox {
+  .contact .contact-social {
     margin-top: 20px;
     width: 70%;
   }

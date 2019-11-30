@@ -14,7 +14,7 @@
   list-style: none;
 }
 
-.page-nav {
+.page_nav {
   height: 8vh;
   width: 100%;
   padding: 0 95px;
@@ -26,13 +26,13 @@
   justify-content: space-between;
 }
 
-.page-nav img {
+.page_nav img {
   height: 7.5vh;
   width: auto;
   margin-top: 0.25vh;
 }
 
-.page-nav .nav-item {
+.page_nav .nav_item {
   text-decoration: none;
   color: white;
   font-weight: bold;
@@ -41,72 +41,69 @@
   font-size: 18px;
 }
 
-.page-nav .nav-item:hover {
+.page_nav .nav_item:hover {
   color: #16cae6;
   cursor: pointer;
 }
 
-.nav-collapse {
-  display: block;
+.nav_collapse {
   display: flex;
   flex-direction: row;
+  margin-left: -10px;
 }
 
-.nav-hamburger {
+.nav_hamburger {
+  padding: 5px;
   width: 40px;
-  height: 30px;
+  height: 25px;
   position: relative;
   margin-right: 10px;
-  cursor: pointer;
   display: none;
+  cursor: pointer;
 }
 
-.nav-hamburger:hover .hamb-el1,
-.nav-hamburger:hover .hamb-el2,
-.nav-hamburger:hover .hamb-el3 {
-  border-top: 5px solid #16cae6;
-  transition: 0.4s;
-}
-
-.hamb-el1,
-.hamb-el2,
-.hamb-el3 {
+.hamb_el1,
+.hamb_el2,
+.hamb_el3 {
   height: 5px;
-  position: absolute;
   width: 100%;
+  position: absolute;
   background-color: white;
   left: 0;
 }
 
-.hamb-el1 {
+.nav_hamburger:hover .hamb_el1,
+.nav_hamburger:hover .hamb_el2,
+.nav_hamburger:hover .hamb_el3 {
+  border-top: 5px solid #16cae6;
+  transition: 0.4s;
+}
+
+.hamb_el1 {
   margin-top: -5px;
   top: 0;
 }
 
-.hamb-el2 {
+.hamb_el2 {
   margin-top: -5px;
   top: 50%;
 }
 
-.hamb-el3 {
+.hamb_el3 {
   bottom: 0;
 }
 
-.hamb-active .hamb-el2 {
-  display: none;
-}
-
-.hambl1-active {
+.hambl1_active {
   transform: rotate(-45deg);
   top: 50%;
 }
 
-.hambl3-active {
+.hambl3_active {
   transform: rotate(45deg);
   top: calc(50% - 5px);
 }
 
-.page-header {
+.page_header {
   height: 99vh;
   background-image: url(IMG/header-page.png);
   background-position: center;
@@ -115,7 +112,7 @@
   position: relative;
 }
 
-.header-text {
+.header_text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -126,25 +123,24 @@
   text-align: center;
   font-size: 1.3rem;
   color: white;
-  text-align: center;
 }
 
-.header-text h1 {
+.header_text h1 {
   border-bottom: 1px solid white;
   padding: 10px;
 }
 
-.header-text h1 span {
+.header_text h1 span {
   color: #16cae6;
 }
 
-.header-text p {
+.header_text p {
   font-size: 1.4rem;
   margin-top: 5px;
   font-weight: 600;
 }
 
-.page-ofert {
+.page_ofert {
   position: relative;
   overflow: hidden;
   padding: 100px 182px;
@@ -159,20 +155,20 @@
   z-index: -1;
 }
 
-.ofert-header {
+.ofert_header {
   height: 195px;
   border-bottom: 1px solid grey;
   font-size: 48px;
   color: #242424;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
-.oferts-box {
+.oferts_box {
   height: 400px;
+  margin-top: 80px;
   display: flex;
-  margin-top: 152px;
   align-items: center;
   justify-content: space-between;
 }
@@ -205,31 +201,23 @@
 }
 
 .bigofert {
-  display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  margin-top: 200px;
+  display: flex;
   align-items: center;
-  margin-top: 400px;
+  justify-content: space-between;
 }
 
-.bigofert h2 {
-  margin-top: 30px;
-  font-size: 36px;
-}
-
-.bigofert p {
-  color: #878787;
-  line-height: 30px;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.bigofert-text {
-  width: 510px;
+.bigofert_text {
   height: 281px;
+  max-width: 25vw;
 }
 
-.bigofert-text p {
+.bigofert_text h2 {
+  font-size: 2rem;
+}
+
+.bigofert_text p {
   margin-top: 50px;
   font-size: 17px;
   line-height: 24px;
@@ -238,35 +226,25 @@
 
 .bigofert:last-child {
   text-align: left;
-}
-
-.bigofert:last-child .bigofert-text h2 {
   color: white;
 }
 
-.bigofert:last-child .bigofert-text p {
+.bigofert:last-child p {
   color: white;
-}
-
-.tablet {
-  height: 550px;
-  width: 500px;
 }
 
 .laptop {
-  width: 665px;
-  height: 439px;
+  height: auto;
+  width: 41vw;
 }
 
-.porfolio {
-  height: 100%;
-  overflow: hidden;
-  width: 100%;
+.tablet {
+  height: auto;
+  width: 30vw;
 }
 
 .description {
   height: 70%;
-  width: 100%;
   display: flex;
 }
 
@@ -277,8 +255,8 @@
 }
 
 .primaryphoto img {
-  width: 100%;
   height: 100%;
+  width: 100%;
   transform: scale(1.02);
 }
 
@@ -287,134 +265,132 @@
   transition: 1s;
 }
 
-.porfolio-text {
+.porfolio_text {
   width: 50%;
-  height: 100%;
   padding: 50px;
 }
 
-.porfolio-text h2 {
+.porfolio_text h2 {
   font-size: 72px;
 }
 
-.porfolio-text p {
+.porfolio_text p {
   color: #484848;
   margin-top: 50px;
   line-height: 30px;
 }
 
-.porfolio-items {
+.porfolio_items {
   height: 30%;
-  width: 100%;
   display: flex;
 }
 
-.poroflio-item {
+.porfolio_item {
   height: 250px;
   width: 100%;
-  overflow: hidden;
   z-index: 3;
+  overflow: hidden;
 }
 
-.poroflio-item img {
+.porfolio_item img {
   height: 100%;
   width: 100%;
   transform: scale(1.01);
 }
 
-.poroflio-item img:hover {
+.porfolio_item img:hover {
   transform: scale(1.1);
   transition: 2s;
 }
 
 .whoiam {
   height: 35vh;
-  width: 100%;
   font-size: 34px;
   font-weight: 700;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.whoiam-btn {
+.whoiam_btn {
   height: 70px;
   width: 230px;
   background-color: #16cae6;
   margin-top: 25px;
   border-radius: 50px;
+  font-size: 30px;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 30px;
-  cursor: pointer;
 }
 
-.whoiam-btn a {
+.whoiam_btn a {
   color: white;
 }
 
-.whoiam-btn:hover {
+.whoiam_btn:hover {
   background-color: white;
   border: 5px solid #16cae6;
 }
 
-.whoiam-btn:hover a {
+.whoiam_btn:hover a {
   color: #16cae6;
 }
 
 .contact {
   position: relative;
   height: 720px;
-  width: 100%;
   background-image: url(IMG/contact-page.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  display: flex;
   flex-direction: row;
+  padding: 0px 182px;
+  display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 100px 182px;
+  justify-content: space-between;
 }
 
-.contact-text {
-  height: 377px;
-  width: 50%;
+.contact_text {
+  max-width: 50%;
   z-index: 1;
+  overflow: hidden;
+  margin-bottom: 130px;
 }
 
-.contact-text h2 {
+.contact_text h2 {
   font-size: 65px;
   color: white;
   margin-bottom: 20px;
 }
 
-.contact-text p {
-  font-size: 30px;
+.contact_text p {
+  font-size: 24px;
   font-weight: 400;
   line-height: 48px;
   color: #2ebaee;
 }
 
-.contact-text span {
+.contact_text span {
   color: #878787;
 }
 
 form {
   color: white;
   z-index: 1;
-  display: flex;
   flex-direction: column;
-  justify-items: center;
+  margin-left: 25px;
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .nick {
-  width: 636px;
+  width: 38vw;
   height: 61px;
   border-radius: 3px;
   border: 1px solid #8a8a8a;
@@ -424,7 +400,7 @@ form {
 }
 
 .email {
-  width: 636px;
+  width: 38vw;
   height: 61px;
   border-radius: 3px;
   border: 1px solid #8a8a8a;
@@ -435,7 +411,7 @@ form {
   margin-top: 20px;
 }
 
-.field-error {
+.field_error {
   color: white;
   border-bottom: 1px solid red;
   border-left: 1px solid red;
@@ -449,7 +425,7 @@ form {
 }
 
 textarea {
-  width: 636px;
+  width: 38vw;
   height: 204px;
   border-radius: 3px;
   background-color: transparent;
@@ -470,7 +446,7 @@ textarea {
   cursor: pointer;
 }
 
-.contact-social {
+.contact_social {
   height: 58px;
   width: 60%;
   margin-top: 73px;
@@ -479,12 +455,12 @@ textarea {
   justify-content: space-between;
 }
 
-.contact-social img {
+.contact_social img {
   height: 58px;
   width: auto;
 }
 
-.footer-page {
+.footer_page {
   height: 120px;
   background-color: black;
   display: flex;
@@ -503,24 +479,32 @@ textarea {
 }
 
 @media (max-width: 1200px) {
-  .page-nav {
-    padding: 0px;
+  .page_nav {
+    padding: 0 10px;
   }
-  .page-ofert {
+  .page_ofert {
     padding: 2%;
   }
-  .oferts-box {
-    padding: 0 30px;
-    width: 95%;
-    margin: 100px auto;
+  .ofert_header {
+    width: 85%;
+    margin: 0 auto;
   }
-  .ofert {
-    margin-bottom: 80px;
+  .oferts_box {
+    padding: 0 30px;
+    width: 85%;
+    margin: 100px auto;
   }
   .bigofert {
     flex-direction: column;
-    align-items: center;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bigofert_text {
+    max-width: 60vw;
+    padding: 0px;
+    margin-top: 25px;
   }
   .bigofert:first-child {
     flex-direction: column-reverse;
@@ -533,17 +517,19 @@ textarea {
     height: auto;
   }
   .tablet {
-    width: 90%;
+    width: 80%;
     height: auto;
   }
-  .ofert-header {
-    width: 90%;
-    margin: 0 auto;
+  .whoiam {
+    height: 25vh;
   }
-  .contact-social {
+  .contact {
+    padding: 0px;
+  }
+  .contact_social {
     width: 100%;
   }
-  .porfolio-text {
+  .porfolio_text {
     text-align: center;
     width: 100%;
   }
@@ -552,43 +538,62 @@ textarea {
     flex-direction: column-reverse;
   }
   .primaryphoto {
-    height: 25vh;
+    height: auto;
     width: 100%;
   }
-  .porfolio-items {
+  .porfolio_items {
     height: 500px;
-    display: block;
-    background-color: red;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
   }
-  .poroflio-item {
-    width: 50%;
-    float: left;
+  .porfolio_item {
+    height: 100%;
+    width: 100%;
   }
   .backgroundmain {
     height: 40%;
   }
   .tablet {
-    width: 80%;
+    width: 58vw;
   }
   .contact {
     justify-items: center;
     flex-direction: column;
     height: 1200px;
+    padding-bottom: 100px;
   }
-  .contact-text {
+  .contact_text {
     margin-top: 100px;
-    width: 100%;
   }
-  form {
-    margin-top: 150px;
+  .nick,
+  .email,
+  .send,
+  .contact_text,
+  textarea {
+    width: 58vw;
   }
-  .footer-page {
-    padding: 0px;
+  .field_error {
+    color: white;
+    border-bottom: 1px solid red;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+    padding: 5px;
+    border-radius: 3px;
+  }
+  .confirm {
+    margin-top: 10px;
+  }
+  .send {
+    border-radius: 5px;
+  }
+  .footer_page {
+    padding: 25px;
   }
 }
 
 @media (max-width: 700px) {
-  .nav-collapse {
+  .nav_collapse {
     border-top: solid 2px rgba(8, 8, 8, 0.5);
     border-bottom: solid 2px rgba(8, 8, 8, 0.2);
     position: absolute;
@@ -602,18 +607,18 @@ textarea {
     justify-content: space-around;
     flex-direction: column;
   }
-  .nav-hamburger,
+  .nav_hamburger,
   .menubtn {
     display: block;
   }
-  .header-text {
+  .header_text {
     height: 200px;
     width: 90%;
     margin-left: -45%;
     margin-top: -100px;
     font-size: 0.9rem;
   }
-  .oferts-box {
+  .oferts_box {
     flex-direction: column;
     align-items: center;
     height: 1000px;
@@ -622,6 +627,7 @@ textarea {
   .ofert {
     text-align: center;
     width: 90%;
+    margin-bottom: 50px;
   }
   .ofert p {
     font-size: 14px;
@@ -629,67 +635,69 @@ textarea {
   .bigofert h2 {
     font-size: 1.2rem;
   }
-  .bigofert .bigofert-text {
+  .bigofert .bigofert_text {
     width: 90%;
   }
-  .bigofert .bigofert-text p {
+  .bigofert .bigofert_text p {
     font-size: 14px;
   }
-  .porfolio-text h2 {
+  .porfolio_text h2 {
     font-size: 16vw;
+  }
+  .whoiam {
+    height: 35vh;
   }
   .whoiam h2 {
     font-size: 28px;
   }
-  .contact-social {
+  .contact_social {
     height: 58px;
     width: 60%;
     margin-top: 73px;
   }
-  .contact-social img {
+  .contact_social img {
     height: 40px;
     width: auto;
   }
   .contact {
     padding: 0px;
   }
-  .contact .contact-text {
-    width: 70%;
+  .contact .contact_text {
+    min-width: 85vw;
+    margin-bottom: 0px;
   }
-  .contact .contact-text h2 {
+  .contact .contact_text h2 {
     font-size: 16vw;
   }
-  .contact .contact-text p {
+  .contact .contact_text p {
     font-size: 6vw;
   }
+  .contact .email,
+  .contact .nick,
+  .contact textarea,
   .contact form {
-    width: 80vw;
+    width: 85vw;
   }
-  .contact .email {
-    width: 80vw;
-  }
-  .contact .nick {
-    width: 80vw;
-  }
-  .contact textarea {
-    width: 80vw;
+  .contact form {
+    margin-bottom: 80px;
+    margin-left: -5px;
   }
   .contact .whoiam {
     height: 50vh;
   }
-  .contact .contact-social {
+  .contact .contact_social {
     margin-top: 20px;
     width: 70%;
   }
 }
 
-.elem-is-busy {
+.elem_is_busy {
   position: relative;
   pointer-events: none;
   opacity: 0.5;
 }
 
-.elem-is-busy::after {
+.elem_is_busy::after {
   position: absolute;
   left: 50%;
   top: 50%;

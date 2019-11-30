@@ -8,22 +8,25 @@ function Navigation() {
     });
     let collapseStatus = "off";
     const hamburger = document.getElementById("hamburger")
-    const navCollapse = document.getElementById("nav-collapse")
-    const hamb1 = document.getElementById("hamb-el1")
-    const hamb3 = document.getElementById("hamb-el3")
+    const navCollapse = document.getElementById("nav_collapse")
+    const hamb1 = document.getElementById("hamb_el1")
+    const hamb2 = document.getElementById("hamb_el2")
+    const hamb3 = document.getElementById("hamb_el3")
     hamburger.addEventListener("click", function () {
         if (collapseStatus == "off") {
             navCollapse.style.display = "flex";
             collapseStatus = "on";
-            hamburger.classList.add("hamb-active");
-            hamb1.classList.add("hambl1-active");
-            hamb3.classList.add("hambl3-active");
+            hamburger.classList.add("hamb_active");
+            hamb1.classList.add("hambl1_active");
+            hamb2.style.display = "none";
+            hamb3.classList.add("hambl3_active");
         } else if (collapseStatus == "on" ){
             navCollapse.style.display = "";
             collapseStatus = "off";
-            hamburger.classList.remove("hamb-active");
-            hamb1.classList.remove("hambl1-active");
-            hamb3.classList.remove("hambl3-active");
+            hamburger.classList.remove("hamb_active");
+            hamb1.classList.remove("hambl1_active");
+            hamb2.style.display = "block";
+            hamb3.classList.remove("hambl3_active");
         }
     })
    

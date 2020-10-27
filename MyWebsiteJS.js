@@ -44,10 +44,9 @@ function Email() {
         const fieldRow = elem.closest('.form-row');
         const fieldError = fieldRow.querySelector('.field-error');
 
-        //jeżeli komunikat z błędem pod polem nie istnieje...
+        
         if (fieldError === null) {
-            //pobieramy z pola tekst błędu
-            //i tworzymy pole
+         
             const errorText = elem.dataset.error;
             const divError = document.createElement('div');
             divError.classList.add('field-error');
@@ -147,9 +146,6 @@ function Email() {
                         }
 
                         if (ret.status === 'error') {
-                            //jeżeli istnieje komunikat o błędzie wysyłki
-                            //np. generowany przy poprzednim wysyłaniu formularza
-                            //usuwamy go, by nie duplikować tych komunikatów
                             if (document.querySelector('.send-error')) {
                                 document.querySelector('.send-error').remove();
                             }
